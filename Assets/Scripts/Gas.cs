@@ -13,6 +13,6 @@ public class Gas : MonoBehaviour
     
     void Update()
     {
-        
+        transform.Rotate(Vector3.up, gas * Time.deltaTime);
     }
 }

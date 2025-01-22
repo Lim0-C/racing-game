@@ -17,7 +17,6 @@ public class CollisionEvent : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log(other.gameObject.name);
         gas = other.gameObject.GetComponent<Gas>();
         if (gamemanager.GetComponent<GameManager>().currentGas + gas.gas >= 100f)
         {
